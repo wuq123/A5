@@ -1,0 +1,24 @@
+.size {
+    width: 100px;
+    height: 100px;
+}
+
+.siez2(@w){
+    width: @w;
+    height: @w;
+}
+
+// .box {
+//     .siez2(200px);
+//     .hoverShadow();
+//     // background-color: red;
+// }
+
+//鼠标经过阴影效果
+.hoverShadow () {
+    transition: all .5s;
+    &:hover {
+        transform: translate3d(0,-3px,0);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+}
